@@ -70,9 +70,9 @@ func TestCOsmosToCelestia(t *testing.T) {
 
 func TestCOsmosToCelestiaMnemonia(t *testing.T) {
 	// Set the desired prefix for the account address
-	// newPrefix := "celestia"
+	newPrefix := "celestia"
 	// // Modify the bech32PrefixAccAddr variable in the config package
-	// sdk.GetConfig().SetBech32PrefixForAccount(newPrefix, newPrefix+"pub")
+	sdk.GetConfig().SetBech32PrefixForAccount(newPrefix, newPrefix+"pub")
 
 	privKey := secp256k1.GenPrivKey()
 	fmt.Printf("privKey.String(): %v\n", privKey.String())
@@ -109,7 +109,7 @@ func TestCOsmosToCelestiaMnemonia(t *testing.T) {
 func TestJJ(t *testing.T) {
 
 	// Replace privateKeyBytes with your existing private key in bytes //celestia1fnxgqll56hkcqajx905s2lhjq5qh2l0uauc4al
-	privateKeyBytes, err := hex.DecodeString("cb735fa1305ca77eac4129616c2ca79af8c21b7a2ebff795750782663a29ee9b")
+	privateKeyBytes, err := hex.DecodeString("8e2c88682b364f8db1192a6c956120419abcd8b23d15e9fd981ab4352084b2b7")
 	if err != nil {
 		
 		
@@ -126,7 +126,7 @@ func TestJJ(t *testing.T) {
 
 	fmt.Println("Cosmos SDK account address:", address.String())
 
-	// assert.Equal(t, "cosmos1fvm5hl5ez09588u8mu5uhl5d6feerrwvdjhhya", address.String())
+	assert.Equal(t, "celestia1j555hdgulrt9jwq8752hqhnkunlpdszl2wyr3f", address.String())
 
 }
 
