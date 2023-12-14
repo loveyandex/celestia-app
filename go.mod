@@ -8,6 +8,8 @@ require (
 	github.com/tendermint/tendermint v0.35.9
 )
 
+require github.com/andybalholm/cascadia v1.3.1 // indirect
+
 require (
 	cosmossdk.io/api v0.7.2 // indirect
 	cosmossdk.io/collections v0.4.0 // indirect
@@ -19,6 +21,7 @@ require (
 	cosmossdk.io/store v1.0.0 // indirect
 	cosmossdk.io/x/tx v0.12.0 // indirect
 	github.com/DataDog/zstd v1.5.5 // indirect
+	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/btcsuite/btcd v0.22.1 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.3.2 // indirect

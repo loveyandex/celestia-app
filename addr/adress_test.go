@@ -11,6 +11,7 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
+ 
 
 )
 
@@ -131,3 +132,26 @@ func TestJJ(t *testing.T) {
 }
 
 
+
+// func TestMnemonic(t *testing.T) {
+// 	mnemonic := "your mnemonic words go here"
+
+// 	seed, err := types.Mnem(mnemonic)
+// 	if err != nil {
+// 		fmt.Println("Error generating seed from mnemonic:", err)
+// 		return
+// 	}
+
+// 	privKey, err := secp256k1.DerivePrivateKey(seed)
+// 	if err != nil {
+// 		fmt.Println("Error deriving private key:", err)
+// 		return
+// 	}
+
+// 	pubKey := privKey.PubKey()
+
+// 	accAddress := types.AccAddress(pubKey.Address())
+
+// 	fmt.Println("Generated AccAddress:", accAddress.String())
+	
+// }

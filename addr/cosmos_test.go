@@ -19,6 +19,8 @@ func TestMaink(t *testing.T){
 	//cosmos1e4pn42zv6yd853yrc2sm04nv8hcwev7c7j6yd2
 }
 
+
+
 func GetCosmosAddressFromPrivateKeyHex(hexPrivateKey string) (string, error) {
 	privateKeyBytes, err := hex.DecodeString(hexPrivateKey)
 	if err != nil {
