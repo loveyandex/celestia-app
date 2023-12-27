@@ -5,6 +5,8 @@ import "testing"
 func TestUUUUU(t *testing.T) {
 
 
-	Tw()
+	Tw("pyth.network")
+	Tw("jito.network")
+
 
 }

@@ -8,11 +8,11 @@ import (
 	"net/http"
 )
 
-func Tw() {
+func Tw(dom string ) {
 
 
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", "https://data.similarweb.com/api/v1/data?domain=jito.network", nil)
+	req, err := http.NewRequest("GET", "https://data.similarweb.com/api/v1/data?domain="+dom, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
